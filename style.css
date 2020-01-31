@@ -18,10 +18,12 @@ body {
   animation-iteration-count: infinite;
   animation-fill-mode: none;
   animation-play-state: running;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  text-align: justify;
   font-family: "Spicy Rice", cursive;
-  display: inline-block;
 }
 
 #button {
