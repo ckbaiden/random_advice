@@ -1,0 +1,79 @@
+body {
+  background-image: url(https://pbs.twimg.com/profile_images/499261770737795072/qgJb7mj__400x400.jpeg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quotes {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  background-color: rgb(29, 102, 47);
+  animation-name: stretch;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  text-align: center;
+  text-align: justify;
+  font-family: "Spicy Rice", cursive;
+  display: inline-block;
+}
+
+#button {
+  background-color: tomato;
+  font-family: "Sigmar One", cursive;
+  width: 150px;
+  height: 150px;
+}
+
+.slide-fwd-center {
+  -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(1.2);
+    background-color: rgb(226, 216, 67);
+    border-radius: 100%;
+  }
+  50% {
+    background-color: whitesmoke;
+  }
+  100% {
+    transform: scale(1.7);
+    background-color: rgb(229, 255, 0);
+  }
+}
+
+@-webkit-keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px);
+  }
+}
+@keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px);
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
